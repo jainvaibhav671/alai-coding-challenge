@@ -1,10 +1,16 @@
-import TldrawComponent from "./TldrawComponent";
+import TldrawComponent from "@/components/TldrawComponent";
 
 export default function App() {
-  return (
-    <div style={{ position: "fixed", inset: 0 }}>
-      <h1>Tldraw Canvas:</h1>
-      <TldrawComponent />
-    </div>
-  );
+	return (
+		<div
+			style={{
+				display: "flex",
+				flexFlow: "column",
+				alignItems: "center",
+			}}
+		>
+			<h1>Tldraw Canvas</h1>
+			<TldrawComponent />
+		</div>
+	);
 }
